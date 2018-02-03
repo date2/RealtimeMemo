@@ -14,6 +14,7 @@
 		4DA4CCE72024837B00EEB390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4CCE52024837B00EEB390 /* LaunchScreen.storyboard */; };
 		4DA4CCF22024837B00EEB390 /* RealtimeMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4CCF12024837B00EEB390 /* RealtimeMemoTests.swift */; };
 		4DA4CCFD2024837B00EEB390 /* RealtimeMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4CCFC2024837B00EEB390 /* RealtimeMemoUITests.swift */; };
+		4DB827D82025917D0085FAF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DB827D72025917D0085FAF5 /* GoogleService-Info.plist */; };
 		50A8D659064EAD4BE279FCA0 /* Pods_RealtimeMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A807D75F945AA6E0BD44DE /* Pods_RealtimeMemoUITests.framework */; };
 		71C76C5CF269F232E75D4F8F /* Pods_RealtimeMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BC1793AB24672D9397C18B /* Pods_RealtimeMemoTests.framework */; };
 		74135107298B0DA26B793A53 /* Pods_RealtimeMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE017B58645125B249AA3842 /* Pods_RealtimeMemo.framework */; };
@@ -51,6 +52,7 @@
 		4DA4CCF82024837B00EEB390 /* RealtimeMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealtimeMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA4CCFC2024837B00EEB390 /* RealtimeMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeMemoUITests.swift; sourceTree = "<group>"; };
 		4DA4CCFE2024837B00EEB390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DB827D72025917D0085FAF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6E7BE6A4609D1A61D5813711 /* Pods-RealtimeMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealtimeMemo/Pods-RealtimeMemo.release.xcconfig"; sourceTree = "<group>"; };
 		70BC1793AB24672D9397C18B /* Pods_RealtimeMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealtimeMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6995DE0372620DDAE0ED7C /* Pods-RealtimeMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealtimeMemo/Pods-RealtimeMemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		4DA4CCDB2024837B00EEB390 /* RealtimeMemo */ = {
 			isa = PBXGroup;
 			children = (
+				4DB827D62025917D0085FAF5 /* Resource */,
 				4DA4CCDC2024837B00EEB390 /* AppDelegate.swift */,
 				4DA4CCDE2024837B00EEB390 /* ViewController.swift */,
 				4DA4CCE02024837B00EEB390 /* Main.storyboard */,
@@ -150,6 +153,14 @@
 				4DA4CCFE2024837B00EEB390 /* Info.plist */,
 			);
 			path = RealtimeMemoUITests;
+			sourceTree = "<group>";
+		};
+		4DB827D62025917D0085FAF5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4DB827D72025917D0085FAF5 /* GoogleService-Info.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		5792E18A0A43913ABECA6121 /* Pods */ = {
@@ -282,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DA4CCE72024837B00EEB390 /* LaunchScreen.storyboard in Resources */,
+				4DB827D82025917D0085FAF5 /* GoogleService-Info.plist in Resources */,
 				4DA4CCE42024837B00EEB390 /* Assets.xcassets in Resources */,
 				4DA4CCE22024837B00EEB390 /* Main.storyboard in Resources */,
 			);
