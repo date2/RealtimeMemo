@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XA2-E7-LDT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MemoEdit-->
+        <scene sceneID="GPu-ig-t3Q">
+            <objects>
+                <tableViewController id="XA2-E7-LDT" customClass="MemoEditViewController" customModule="RealtimeMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gK6-5A-Jy7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="aAG-P1-YG3">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="246" id="37a-VE-4eK">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="246"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="37a-VE-4eK" id="3ss-J2-zYk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="245.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JoH-CG-ETg">
+                                                    <rect key="frame" x="15" y="15" width="345" height="215.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JoH-CG-ETg" firstAttribute="leading" secondItem="3ss-J2-zYk" secondAttribute="leading" constant="15" id="SXp-EM-rqq"/>
+                                                <constraint firstItem="JoH-CG-ETg" firstAttribute="top" secondItem="3ss-J2-zYk" secondAttribute="top" constant="15" id="WZY-Ps-jmc"/>
+                                                <constraint firstAttribute="bottom" secondItem="JoH-CG-ETg" secondAttribute="bottom" constant="15" id="hin-k2-MeL"/>
+                                                <constraint firstAttribute="trailing" secondItem="JoH-CG-ETg" secondAttribute="trailing" constant="15" id="jjI-Gz-v7z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="XA2-E7-LDT" id="rQD-nc-Eje"/>
+                            <outlet property="delegate" destination="XA2-E7-LDT" id="Sa9-44-ikq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="MemoEdit" id="EUb-Io-WX3">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="m5v-tE-AT8">
+                            <connections>
+                                <action selector="cancelAction:" destination="XA2-E7-LDT" id="v16-j6-xjU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="vE1-Qq-SlC">
+                            <connections>
+                                <action selector="saveAction:" destination="XA2-E7-LDT" id="Ji6-jy-uZ7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="descriptionView" destination="JoH-CG-ETg" id="hNs-H7-Esy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkb-lD-Dtw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-160.80000000000001" y="101.19940029985008"/>
+        </scene>
+    </scenes>
+</document>

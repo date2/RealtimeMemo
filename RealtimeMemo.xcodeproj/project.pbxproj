@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		4DA4CCDD2024837B00EEB390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4CCDC2024837B00EEB390 /* AppDelegate.swift */; };
-		4DA4CCDF2024837B00EEB390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4CCDE2024837B00EEB390 /* ViewController.swift */; };
-		4DA4CCE22024837B00EEB390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4CCE02024837B00EEB390 /* Main.storyboard */; };
+		4DA4CCE22024837B00EEB390 /* MemoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4CCE02024837B00EEB390 /* MemoList.storyboard */; };
 		4DA4CCE42024837B00EEB390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4CCE32024837B00EEB390 /* Assets.xcassets */; };
 		4DA4CCE72024837B00EEB390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA4CCE52024837B00EEB390 /* LaunchScreen.storyboard */; };
 		4DA4CCF22024837B00EEB390 /* RealtimeMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4CCF12024837B00EEB390 /* RealtimeMemoTests.swift */; };
 		4DA4CCFD2024837B00EEB390 /* RealtimeMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA4CCFC2024837B00EEB390 /* RealtimeMemoUITests.swift */; };
 		4DB827D82025917D0085FAF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DB827D72025917D0085FAF5 /* GoogleService-Info.plist */; };
+		4DB827DA2025B27F0085FAF5 /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB827D92025B27F0085FAF5 /* MemoListViewController.swift */; };
+		4DB827DD2025B2FD0085FAF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB827DC2025B2FD0085FAF5 /* LoginViewController.swift */; };
+		4DB827DF2025B3130085FAF5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB827DE2025B3130085FAF5 /* Login.storyboard */; };
+		4DB827E22026CAB90085FAF5 /* MemoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB827E12026CAB90085FAF5 /* MemoRepository.swift */; };
+		4DB827E52026CBC80085FAF5 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB827E42026CBC80085FAF5 /* Memo.swift */; };
+		4DB827E92026DBA90085FAF5 /* MemoEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB827E82026DBA90085FAF5 /* MemoEdit.storyboard */; };
+		4DB827EB2026DD7B0085FAF5 /* MemoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB827EA2026DD7B0085FAF5 /* MemoEditViewController.swift */; };
 		50A8D659064EAD4BE279FCA0 /* Pods_RealtimeMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A807D75F945AA6E0BD44DE /* Pods_RealtimeMemoUITests.framework */; };
 		71C76C5CF269F232E75D4F8F /* Pods_RealtimeMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BC1793AB24672D9397C18B /* Pods_RealtimeMemoTests.framework */; };
 		74135107298B0DA26B793A53 /* Pods_RealtimeMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE017B58645125B249AA3842 /* Pods_RealtimeMemo.framework */; };
@@ -41,8 +47,7 @@
 		0B92BD35C153646B1AC0CC1A /* Pods-RealtimeMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeMemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealtimeMemoUITests/Pods-RealtimeMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4DA4CCD92024837B00EEB390 /* RealtimeMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealtimeMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA4CCDC2024837B00EEB390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4DA4CCDE2024837B00EEB390 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4DA4CCE12024837B00EEB390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DA4CCE12024837B00EEB390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MemoList.storyboard; sourceTree = "<group>"; };
 		4DA4CCE32024837B00EEB390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DA4CCE62024837B00EEB390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DA4CCE82024837B00EEB390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +58,13 @@
 		4DA4CCFC2024837B00EEB390 /* RealtimeMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeMemoUITests.swift; sourceTree = "<group>"; };
 		4DA4CCFE2024837B00EEB390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DB827D72025917D0085FAF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4DB827D92025B27F0085FAF5 /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		4DB827DC2025B2FD0085FAF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4DB827DE2025B3130085FAF5 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		4DB827E12026CAB90085FAF5 /* MemoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRepository.swift; sourceTree = "<group>"; };
+		4DB827E42026CBC80085FAF5 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		4DB827E82026DBA90085FAF5 /* MemoEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemoEdit.storyboard; sourceTree = "<group>"; };
+		4DB827EA2026DD7B0085FAF5 /* MemoEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEditViewController.swift; sourceTree = "<group>"; };
 		6E7BE6A4609D1A61D5813711 /* Pods-RealtimeMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealtimeMemo/Pods-RealtimeMemo.release.xcconfig"; sourceTree = "<group>"; };
 		70BC1793AB24672D9397C18B /* Pods_RealtimeMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealtimeMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6995DE0372620DDAE0ED7C /* Pods-RealtimeMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealtimeMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealtimeMemo/Pods-RealtimeMemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,10 +138,11 @@
 		4DA4CCDB2024837B00EEB390 /* RealtimeMemo */ = {
 			isa = PBXGroup;
 			children = (
+				4DB827E72026DA840085FAF5 /* Controller */,
+				4DB827E32026CBBD0085FAF5 /* Model */,
+				4DB827E02026CA9C0085FAF5 /* Repository */,
 				4DB827D62025917D0085FAF5 /* Resource */,
 				4DA4CCDC2024837B00EEB390 /* AppDelegate.swift */,
-				4DA4CCDE2024837B00EEB390 /* ViewController.swift */,
-				4DA4CCE02024837B00EEB390 /* Main.storyboard */,
 				4DA4CCE32024837B00EEB390 /* Assets.xcassets */,
 				4DA4CCE52024837B00EEB390 /* LaunchScreen.storyboard */,
 				4DA4CCE82024837B00EEB390 /* Info.plist */,
@@ -161,6 +174,59 @@
 				4DB827D72025917D0085FAF5 /* GoogleService-Info.plist */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		4DB827DB2025B2C60085FAF5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4DB827DC2025B2FD0085FAF5 /* LoginViewController.swift */,
+				4DB827DE2025B3130085FAF5 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4DB827E02026CA9C0085FAF5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4DB827E12026CAB90085FAF5 /* MemoRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4DB827E32026CBBD0085FAF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DB827E42026CBC80085FAF5 /* Memo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DB827E62026DA7F0085FAF5 /* MemoEdit */ = {
+			isa = PBXGroup;
+			children = (
+				4DB827E82026DBA90085FAF5 /* MemoEdit.storyboard */,
+				4DB827EA2026DD7B0085FAF5 /* MemoEditViewController.swift */,
+			);
+			path = MemoEdit;
+			sourceTree = "<group>";
+		};
+		4DB827E72026DA840085FAF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DB827EC2026E3AA0085FAF5 /* MemoList */,
+				4DB827DB2025B2C60085FAF5 /* Login */,
+				4DB827E62026DA7F0085FAF5 /* MemoEdit */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4DB827EC2026E3AA0085FAF5 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				4DA4CCE02024837B00EEB390 /* MemoList.storyboard */,
+				4DB827D92025B27F0085FAF5 /* MemoListViewController.swift */,
+			);
+			path = MemoList;
 			sourceTree = "<group>";
 		};
 		5792E18A0A43913ABECA6121 /* Pods */ = {
@@ -294,8 +360,10 @@
 			files = (
 				4DA4CCE72024837B00EEB390 /* LaunchScreen.storyboard in Resources */,
 				4DB827D82025917D0085FAF5 /* GoogleService-Info.plist in Resources */,
+				4DB827E92026DBA90085FAF5 /* MemoEdit.storyboard in Resources */,
 				4DA4CCE42024837B00EEB390 /* Assets.xcassets in Resources */,
-				4DA4CCE22024837B00EEB390 /* Main.storyboard in Resources */,
+				4DB827DF2025B3130085FAF5 /* Login.storyboard in Resources */,
+				4DA4CCE22024837B00EEB390 /* MemoList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +491,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RealtimeMemo/Pods-RealtimeMemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
@@ -435,6 +504,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
@@ -486,8 +556,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DA4CCDF2024837B00EEB390 /* ViewController.swift in Sources */,
+				4DB827EB2026DD7B0085FAF5 /* MemoEditViewController.swift in Sources */,
+				4DB827DD2025B2FD0085FAF5 /* LoginViewController.swift in Sources */,
+				4DB827E22026CAB90085FAF5 /* MemoRepository.swift in Sources */,
+				4DB827DA2025B27F0085FAF5 /* MemoListViewController.swift in Sources */,
 				4DA4CCDD2024837B00EEB390 /* AppDelegate.swift in Sources */,
+				4DB827E52026CBC80085FAF5 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,12 +597,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4DA4CCE02024837B00EEB390 /* Main.storyboard */ = {
+		4DA4CCE02024837B00EEB390 /* MemoList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4DA4CCE12024837B00EEB390 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MemoList.storyboard;
 			sourceTree = "<group>";
 		};
 		4DA4CCE52024837B00EEB390 /* LaunchScreen.storyboard */ = {

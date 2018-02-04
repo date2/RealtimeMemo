@@ -6,6 +6,7 @@ target 'RealtimeMemo' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
 
   # Pods for RealtimeMemo
 
